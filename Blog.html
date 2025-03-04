@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Side</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <style>
+    .poppins {
+      font-family: "Poppins", sans-serif;
+
+    }
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+
+</head>
+
+<body class="bg-gray-100 p-6">
+  <div class=" bg-white  rounded-xl shadow-md">
+    <div class="flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold flex items-center">
+        <img class="ml-4" src="Image/logo.png" alt="">
+        <span class="ml-2 text-4xl text-gray-700">Dev<span class="font-bold text-black text-4xl">Board</span></span>
+      </h1>
+      <div class="">
+        <button onclick="redirectToIndex()" class="bg-[#3752FD] text-white px-4 py-3 rounded ">Back To Home</button>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="mt-5 text-center text-4xl font-bold underline">Blog</h1>
+
+  <div class=" mt-8 bg-white  rounded-xl shadow-md p-4">
+    <ul>
+      <li>
+        <h3>Question-1: What are the different ways to select an element in the DOM?
+        </h3>
+        <p class="mt-2 text-gray-500">
+          let element = document.getElementById("myId"); ,
+          let elements = document.getElementsByClassName("myClass"); ,
+          let elements = document.getElementsByTagName("div"); ,
+          let elements = document.getElementsByName("myName"); ,
+          let element = document.querySelector(".myClass"); ,
+          let elements = document.querySelectorAll("div.myClass");
+
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class="mt-6 bg-white  rounded-xl shadow-md p-4">
+    <ul>
+      <li>
+        <h3>Question-2: What is the difference between innerHTML, innerText, and textContent ?
+        </h3>
+        <p class="mt-2 text-gray-500">
+          innerHTML → Need HTML formatting ,
+          innerText → Only visible text ,
+          textContent → All text (better performance)
+
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class="mt-6 bg-white  rounded-xl shadow-md p-4">
+    <ul>
+      <li>
+        <h3>Question-3: What is event delegation in the DOM?
+        </h3>
+        <p class="mt-2 text-gray-500">
+          Event Delegation is a technique where a parent element handles events for its child elements, even if they are
+          dynamically added. This works due to event bubbling—events propagate from child to parent in the DOM.
+
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class="mt-6 bg-white  rounded-xl shadow-md p-4">
+    <ul>
+      <li>
+        <h3>Question-4: What is event bubbling in the DOM?
+        </h3>
+        <p class="mt-2 text-gray-500">
+          Event Bubbling is a mechanism where an event starts from the target element and propagates up through its parent
+          elements in the DOM.
+
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class="mt-6 bg-white  rounded-xl shadow-md p-4">
+    <ul>
+      <li>
+        <h3>Question-5: How do you create, add, and remove elements using JavaScript?
+        </h3>
+        <p class="mt-2 text-gray-500">
+          createElement() → Creates an element.
+          appendChild(), append(), insertBefore() → Add elements.
+          remove(), removeChild() → Remove elements.
+
+        </p>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
